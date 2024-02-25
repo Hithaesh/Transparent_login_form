@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* html, body {
+    margin: 0;
+} */
+
+.full-screen-container {
+    background-image: url("background_image.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: hsla(201, 100%, 6%, 0.6);
+    padding: 50px 30px; /*(top bottom) (left right) */
+    min-width: 400px;
+    width: 50%;
+    max-width: 600px;
+}
+
+.login-title {
+    color:white;
+    text-align: center;
+    margin: 0; /* h3 elements have margin by default */
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    /* Remove all default elements */
+    font-size: 1.5em;
+    padding: .1em .25em;
+    background-color: hsla(201, 100%, 91%, 0.3);
+    border: 1px solid hsl(201, 100%, 6%);
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: lighter;
+}
+
+.input-group input:focus {
+    border: 1px solid hsl(201, 100%, 50%);
+}
+
+.login-button {
+    /* background: none; */
+    /* border: none;
+    outline: none; */
+    background-color: hsla(201, 100%, 50%, 0.1);
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid hsl(201, 100%, 50%);
+    font-size: 1.5em;
+    color: white;
+    font-weight: lighter;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: hsla(201, 100%, 50%, 0.3);
+}
+
+.login-button:focus {
+    background-color: hsla(201, 100%, 50%, 0.5);
+}
+
+
+
+

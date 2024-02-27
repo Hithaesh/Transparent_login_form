@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./updated_style.css" />
   </head>
   <body>
     <div class="full-screen-container">
       <div class="login-container">
         <h3 class="login-title">Welcome</h3>
-        <form>
-          <div class="input-group">
-            <label>Email</label>
-            <input type="email" />
+
+        <form class="form">
+          <div class="input-group success">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <span class="msg">Valid email</span>
           </div>
-          <div class="input-group">
-            <label>Password</label>
-            <input type="password" />
+
+          <div class="input-group error">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" />
+            <span class="msg">Incorrect password</span>
           </div>
-          <button type="submit" class="login-button">Sign In</button>
+
+          <button type="submit" class="login-button">Login</button>
         </form>
       </div>
     </div>

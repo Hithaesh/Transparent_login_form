@@ -1,31 +1,40 @@
-* {
+/* * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-}
+} */
+
 
 /* html, body {
     margin: 0;
 } */
 
 .full-screen-container {
+    /* To make it display completely */
     background-image: url("background_image.jpg");
     height: 100vh;
     width: 100vw;
-    background-size: cover;
+    /* After margin and padding it to zero */
+
+    background-size: cover; /*Scale the image it down.*/
     background-position: center;
+
+    /* To make the elements to CENTER */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .login-container {
-    background-color: hsla(201, 100%, 6%, 0.6);
+    /* Targeting the form elements */ 
+
+    background-color: hsla(201, 100%, 6%, 0.7);
     padding: 50px 30px; /*(top bottom) (left right) */
     min-width: 400px;
-    width: 50%;
+    width: 80%;
     max-width: 600px;
+    border-radius: 20px;
 }
 
 .login-title {
@@ -33,9 +42,14 @@
     text-align: center;
     margin: 0; /* h3 elements have margin by default */
     margin-bottom: 40px;
-    font-size: 2.5em;
+    font-size: 2rem;
     font-weight: normal;
 }
+
+/* .form {
+    display: flex;
+    flex-direction: column;
+} */
 
 .input-group {
     display: flex;
